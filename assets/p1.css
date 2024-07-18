@@ -1,0 +1,95 @@
+/* styles.css */
+
+body {
+    background-color: #ffff88; /* Amarelo mais suave */
+    color: #ff0000; /* Vermelho brilhante */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    color: #ff00ff; /* Magenta brilhante */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000000; /* Sombra preta */
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #0000ff; /* Azul brilhante */
+    border: 2px solid #00ff00; /* Verde brilhante */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.badge span {
+    font-size: 1.5em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ffffff;
+}
+
+.buttons-top,
+.buttons-bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center; /* Alinhando os botões ao centro */
+}
+
+button {  
+    background-color: #ff00ff; /* Magenta brilhante */
+    color: #ffffff;
+    border: 5px dashed #0000ff; /* Azul brilhante */
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: none;
+    outline: none; /* Remover a borda de foco do botão */
+}
+
+button:hover {
+    background-color: #0000ff; /* Azul brilhante */
+    color: #ffff00; /* Amarelo brilhante */
+    transform: scale(1.2);
+}
+
+.container {
+    margin: 0 auto; /* Centralizar o container */
+    border: 5px solid #0000ff; /* Azul brilhante */
+    padding: 40px; /* Aumentando o padding para deixar o container maior */
+    background-color: #00ff00; /* Verde brilhante */
+    position: relative;
+    z-index: 10; /* Garante que o container fique acima das imagens */
+    max-width: 1200px; /* Aumentando a largura máxima do container */
+    height: 500px; /* Definindo a altura do container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px; /* Adicionando bordas arredondadas */
+    max-width: 100%; /* Removendo a largura fixa */
+    flex-grow: 1; /* Ocupando todo o espaço disponível */
+}
+.top-image {
+    margin: 0 auto; /* Centralizar a imagem */
+    width: 400px; /* Aumentando o tamanho da imagem */
+    height: auto;
+    margin-bottom: 20px; /* Adicionando espaço entre a imagem e o container */
+}
+
+img{
+    cursor: pointer;
+}

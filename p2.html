@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anao Quiz - Pergunta</title>
+    <link rel="stylesheet" href="assets/p1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="assets/img/anao.jpg" alt="Anao" class="top-image">
+        <div class="container">
+            <h1>Qual é o elemento químico representado pelo símbolo "O"?</h1>
+            <div class="badge">
+                <span>2</span>
+            </div>
+            <div class="buttons-top">
+                <button onclick="verificarResposta('errada')">Ouro</button>
+                <button onclick="verificarResposta('correta')">Oxigênio</button>
+            </div>
+            <div class="buttons-bottom">
+                <button onclick="verificarResposta('errada')">Osmium</button>
+                <button onclick="verificarResposta('errada')">Óxido</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function verificarResposta(resposta) {
+            if (resposta === 'correta') {
+                window.location.href = 'p3.html';
+            } else {
+                window.location.href = 'lose.html';
+            }
+        }
+    </script>
+</body>
+</html>

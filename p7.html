@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anao Quiz - Pergunta</title>
+    <link rel="stylesheet" href="assets/p1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="assets/img/anao.jpg" alt="Anao" class="top-image" onclick="p8()">
+        <div class="container">
+            <h1>O que eu mais gosto de ver na internet?</h1>
+            <div class="badge">
+                <span>7</span>
+            </div>
+            <div class="buttons-top">
+                <button onclick="verificarResposta('errada')">Animes</button>
+                <button onclick="verificarResposta('errada')">Youtube</button>
+            </div>
+            <div class="buttons-bottom">
+                <button onclick="verificarResposta('errada')">Vasco levando surra do flamengo</button>
+                <button onclick="verificarResposta('errada')">Tiktok</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function verificarResposta(resposta) {
+            if (resposta === 'correta') {
+                window.location.href = 'p6.html';
+            } else {
+                window.location.href = 'lose.html';
+            }
+        }
+        function p8(){
+            window.location.href = 'p8.html';
+        }
+    </script>
+</body>
+</html>

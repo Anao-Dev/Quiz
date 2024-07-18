@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anao Quiz - Pergunta</title>
+    <link rel="stylesheet" href="assets/p1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="assets/img/anao.jpg" alt="Anao" class="top-image">
+        <div class="container">
+            <h1>Se um cachorro usasse um smartphone, qual seria o aplicativo mais provável que ele usaria?</h1>
+            <div class="badge">
+                <span>9</span>
+            </div>
+            <div class="buttons-top">
+                <button onclick="verificarResposta('errada')">Instagram</button>
+                <button onclick="verificarResposta('errada')">Netflix</button>
+            </div>
+            <div class="buttons-bottom">
+                <button onclick="verificarResposta('errada')">Whatsapp</button>
+                <button onclick="verificarResposta('correta')">Ifood</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function verificarResposta(resposta) {
+            if (resposta === 'correta') {
+                window.location.href = 'p10.html';
+            } else {
+                window.location.href = 'lose.html';
+            }
+        }
+    </script>
+</body>
+</html>

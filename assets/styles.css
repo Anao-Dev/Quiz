@@ -1,0 +1,80 @@
+body {
+    background-color: #ffff88; /* Amarelo mais suave */
+    color: #ff0000; /* Vermelho brilhante */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.container {
+    border: 5px solid #0000ff; /* Azul brilhante */
+    padding: 20px;
+    margin: 10px;
+    background-color: #00ff00; /* Verde brilhante */
+    position: relative;
+    z-index: 10; /* Garante que o container fique acima das imagens */
+}
+
+h1 {
+    font-size: 4em;
+    color: #ff00ff; /* Magenta brilhante */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000000; /* Sombra preta */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+
+  button {  background-color: #ff00ff; /* Magenta brilhante */
+    color: #ffffff;
+    border: 5px dashed #0000ff; /* Azul brilhante */
+    padding: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: none;
+    outline: none; /* Remover a borda de foco do botão */
+}
+
+button:hover {
+    background-color: #0000ff; /* Azul brilhante */
+    color: #ffff00; /* Amarelo brilhante */
+    transform: scale(1.2);
+}
+
+.images {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    z-index: 5; /* Certifica que as imagens fiquem abaixo do container */
+}
+
+.left-image,
+.right-image {
+    width: 400px; /* Aumentando o tamanho das imagens */
+    height: auto;
+}
+
+.left-image {
+    margin-left: 80px;
+}
+
+.right-image {
+    margin-right: 80px;
+}
+a{
+    color: #ffffff;
+    text-decoration: none;
+}

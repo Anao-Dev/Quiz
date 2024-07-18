@@ -1,0 +1,108 @@
+body {
+    background-color: #ffff88; /* Amarelo mais suave */
+    color: #ff0000; /* Vermelho brilhante */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    margin: 0;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta a altura para centralizar verticalmente */
+    padding: 20px;
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Limita a largura total do conteúdo */
+}
+
+.container {
+    border: 5px solid #0000ff; /* Azul brilhante */
+    padding: 30px; /* Diminuído o padding */
+    background-color: #00ff00; /* Verde brilhante */
+    position: relative;
+    z-index: 10; /* Garante que o container fique acima das imagens */
+    flex: 1; /* Permite que o container ocupe o espaço disponível */
+    max-width: 600px; /* Limita a largura do container */
+}
+
+h1 {
+    font-size: 2.5em; /* Diminuído o tamanho da fonte */
+    color: #ff00ff; /* Magenta brilhante */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #000000; /* Sombra preta */
+    animation: pulse 2s infinite; /* Animação de pulsação */
+}
+
+.instructions {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em; /* Diminuído o tamanho da fonte */
+    color: #ff00ff; /* Magenta brilhante */
+    text-shadow: 2px 2px #000000; /* Sombra preta */
+}
+
+.instructions p {
+    margin-bottom: 20px;
+    animation: pulse 2s infinite; /* Animação de pulsação */
+}
+
+.instructions p:first-child {
+    font-size: 1.5em; /* Diminuído o tamanho da fonte */
+    font-weight: bold;
+    color: #ff00ff; /* Magenta brilhante */
+    text-shadow: 2px 2px #000000; /* Sombra preta */
+}
+
+button {  
+    background-color: #ff00ff; /* Magenta brilhante */
+    color: #ffffff;
+    border: 5px dashed #0000ff; /* Azul brilhante */
+    padding: 15px; /* Diminuído o padding */
+    margin: 10px;
+    font-size: 1.2em; /* Diminuído o tamanho da fonte */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    cursor: pointer;
+    border-radius: 0;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: none;
+    outline: none; /* Remover a borda de foco do botão */
+}
+
+button:hover {
+    background-color: #0000ff; /* Azul brilhante */
+    color: #ffff00; /* Amarelo brilhante */
+    transform: scale(1.2);
+}
+
+/* Adiciona animação de pulsação */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.images img {
+    width: 250px; /* Ajuste o tamanho das imagens conforme necessário */
+    height: auto;
+}
+
+.left-image {
+    margin-right: 20px; /* Espaçamento entre a imagem da esquerda e o container */
+}
+
+.right-image {
+    margin-left: 20px; /* Espaçamento entre o container e a imagem da direita */
+}

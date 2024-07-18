@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anao Quiz - Pergunta</title>
+    <link rel="stylesheet" href="assets/p1.css">
+    <style>
+        /* Adicionando estilo para o span clicável dentro de um círculo */
+        .badge {
+            position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #0000ff; /* Azul brilhante */
+    border: 2px solid #00ff00; /* Verde brilhante */
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+        }
+        .badge span {
+            font-size: 1.5em;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="assets/img/anao.jpg" alt="Anao" class="top-image">
+        <div class="container">
+            <h1>x+2=8?</h1>
+            <div class="badge" onclick="redirecionarParaP7()">
+                <span>6</span>
+            </div>
+            <div class="buttons-top">
+                <button onclick="verificarResposta('errada')">8</button>
+                <button onclick="verificarResposta('errada')">4</button>
+            </div>
+            <div class="buttons-bottom">
+                <button onclick="verificarResposta('errada')">0</button>
+                <button onclick="verificarResposta('errada')">1</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function verificarResposta(resposta) {
+            if (resposta === 'correta') {
+                window.location.href = 'p7.html';
+            } else {
+                window.location.href = 'lose.html';
+            }
+        }
+
+        function redirecionarParaP7() {
+            window.location.href = 'p7.html';
+        }
+    </script>
+</body>
+</html>

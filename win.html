@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitória - Anao Quiz</title>
+    <link rel="stylesheet" href="assets/vitoria.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="images">
+            <img src="assets/img/anao2.jpg" alt="Imagem Esquerda" class="left-image">
+            <div class="container">
+                <h1>Parabéns, você venceu!</h1>
+                <div class="instructions">
+                    <p>Você respondeu todas as perguntas corretamente.</p>
+                    <p>Obrigado por jogar!</p>
+                </div>
+                <button onclick="recomeçar()">Recomeçar</button>
+            </div>
+            <img src="assets/img/anao2.jpg" alt="Imagem Direita" class="right-image">
+        </div>
+    </div>
+   
+    <script>
+        function recomeçar() {
+            window.location.href = 'index.html'; // Redireciona para a página inicial ou página de início do quiz
+        }
+    </script>
+</body>
+</html>

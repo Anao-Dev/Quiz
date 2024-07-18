@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anao Quiz - Pergunta</title>
+    <link rel="stylesheet" href="assets/p1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="assets/img/anao.jpg" alt="Anao" class="top-image">
+        <div class="container">
+            <h1>Qual das frases abaixo utiliza corretamente o uso da crase?</h1>
+            <div class="badge">
+                <span>5</span>
+            </div>
+            <div class="buttons-top">
+                <button onclick="verificarResposta('errada')">Vou a escola para estudar.</button>
+                <button onclick="verificarResposta('correta')">Vou à escola para estudar.</button>
+            </div>
+            <div class="buttons-bottom">
+                <button onclick="verificarResposta('errada')">Entreguei o presente à ela.</button>
+                <button onclick="verificarResposta('errada')">Entreguei o presente a ela</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function verificarResposta(resposta) {
+            if (resposta === 'correta') {
+                window.location.href = 'p6.html';
+            } else {
+                window.location.href = 'lose.html';
+            }
+        }
+    </script>
+</body>
+</html>

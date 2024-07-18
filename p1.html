@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anao Quiz - Pergunta</title>
+    <link rel="stylesheet" href="assets/p1.css">
+</head>
+<body>
+    <div class="wrapper">
+        <img src="assets/img/anao.jpg" alt="Anao" class="top-image">
+        <div class="container">
+            <h1>Qual é o maior planeta do nosso sistema solar?</h1>
+            <div class="badge">
+                <span>1</span>
+            </div>
+            <div class="buttons-top">
+                <button onclick="verificarResposta('errada')">Terra</button>
+                <button onclick="verificarResposta('errada')">Saturno</button>
+            </div>
+            <div class="buttons-bottom">
+                <button onclick="verificarResposta('errada')">Urano</button>
+                <button onclick="verificarResposta('correta')">Júpiter</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function verificarResposta(resposta) {
+            if (resposta === 'correta') {
+                window.location.href = 'p2.html';
+            } else {
+                window.location.href = 'lose.html';
+            }
+        }
+    </script>
+</body>
+</html>
